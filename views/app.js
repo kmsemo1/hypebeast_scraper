@@ -1,8 +1,11 @@
-// Grab the articles as a json
-$.getJSON("/", function(data) {
-    // For each one
-    for (var i = 0; i < data.length; i++) {
-      // Display the apropos information on the page
-      $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-    }
-  });
+function newCollection(title, link) {
+  // dynamically creating collection
+  var item = $("<div>");
+  item.addClass("collection");
+  $("collection").append(item);
+
+  // dynamically create a tag
+  var article = $("<div>");
+  article.html("<a href=" + {{{data.link}}} + )
+
+}
